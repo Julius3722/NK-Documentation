@@ -1,0 +1,85 @@
+site_name: NK Docs
+
+
+nav:
+  - Home: index.md
+  - "Gamemode":
+    - "Base":
+      - "character.md"
+      - "chat.md"
+      - "job.md"
+      - "money.md"
+      - "name.md"
+      - "rank.md"
+      - "thirdperson.md"
+    - "Modules":
+      - "Donator":
+        - "cartel.md"
+        - "kgjsys.md"
+      - "Player":
+          - "namechange.md"
+          - "fakeident.md"
+          - "squad.md"
+          - "title.md"
+          - "meetsystem.md"
+          - "inventory.md"
+      - "Other":
+        - "achievements.md"
+        - "announces.md"
+        - "capture.md"
+        - "clothingstore.md"
+        - "crafting.md"
+        - "event.md"
+        - "holocron.md"
+        - "post.md"
+        - "shiphacking.md"
+        - "trainingzones.md"
+    - "UI":
+      - "skinlib.md"
+      - "custom_frames.md"
+    - "Hooks":
+        - "charsys_hooks.md"
+    - "Convars":
+      - "hud_convar.md"
+    - "Libaries":
+      - "SQL":
+        - "registerdb.md"
+        - "createtable.md"
+        - "gettable.md"
+      - "Webhooks":
+        - "webhooklib.md"
+
+theme:
+  features:
+    - navigation.tracking
+    - navigation.expand
+    - content.code.copy
+    - content.tabs.link
+    - content.code.annotation
+  palette:
+    scheme: slate
+    primary: amber
+    accent: amber
+  name: material
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      title: Table of contents
+  - tables
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+
